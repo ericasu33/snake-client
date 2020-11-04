@@ -17,6 +17,13 @@ const connect =  function() {
     conn.write("Name: ESU");
   });
 
+  conn.on('connect', () => {
+    // conn.write("Move: up");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 1000);
+  });
+
   return conn;
 };
 
